@@ -23,6 +23,7 @@ SRC_URI = "https://downloadmirror.intel.com/761891/QAT.L.4.20.0-00001.tar.gz;sub
            file://qat-remove-the-deprecated-pci-dma-compat.h-API.patch \
            file://qat17-move-reqsize-into-tfm-for-kernel-v6.2.patch \
            file://qat17-change-PMD_PAGE_SIZE-to-PMD_SIZE-for-kernel-v6.patch \
+           file://qat17-remove-kernel-version-check-for-PMD_SIZE-PMD_P.patch \
           "
 
 do_configure[depends] += "virtual/kernel:do_shared_workdir"
